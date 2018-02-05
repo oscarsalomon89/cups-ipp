@@ -1,12 +1,11 @@
 {
-    "name": "smalot/cups-ipp",
+    "name": "oscarsalomon89/cups-ipp",
     "description": "CUPS Implementation of IPP - PHP Client API",
     "type": "library",
     "license": "GPL-v2",
     "authors": [
         {
-            "name": "Sebastien Malot",
-            "email": "sebastien@malot.fr"
+            "name": "Oscar Salomon"
         }
     ],
     "require": {
@@ -28,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Smalot\\Cups\\": "src/"
+            "oscarsalomon89\\Cups\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Smalot\\Cups\\Tests\\Units\\": "tests/"
+            "oscarsalomon89\\Cups\\Tests\\Units\\": "tests/"
         }
     }
 }

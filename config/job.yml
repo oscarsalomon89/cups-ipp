@@ -44,3 +44,5 @@ requested-attributes:
     tag: 'keyword'
 sides:
     tag: 'keyword'
+InputSlot:
+    tag: 'keyword'

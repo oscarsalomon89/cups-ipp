@@ -46,3 +46,5 @@ sides:
     tag: 'keyword'
 InputSlot:
     tag: 'keyword'
+MediaType:
+    tag: 'keyword'

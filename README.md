@@ -5,12 +5,12 @@ CUPS Implementation of IPP - PHP Client API
 CUPS (Common Unix Printing System) is a modular printing system for Unix-like computer operating systems which allows a computer to act as a print server. A computer running CUPS is a host that can accept print jobs from client computers, process them, and send them to the appropriate printer.
 
 [![Build Status](https://travis-ci.org/smalot/cups-ipp.png?branch=master)](https://travis-ci.org/smalot/cups-ipp)
-[![Current Version](https://poser.pugx.org/smalot/cups-ipp/v/stable.png)](https://packagist.org/packages/smalot/cups-ipp)
-[![composer.lock](https://poser.pugx.org/smalot/cups-ipp/composerlock)](https://packagist.org/packages/smalot/cups-ipp)
+[![Current Version](https://poser.pugx.org/smalot/cups-ipp/v/stable.png)](https://packagist.org/packages/oscarsalomon89/cups-ipp)
+[![composer.lock](https://poser.pugx.org/smalot/cups-ipp/composerlock)](https://packagist.org/packages/oscarsalomon89/cups-ipp)
 
-[![Total Downloads](https://poser.pugx.org/smalot/cups-ipp/downloads.png)](https://packagist.org/packages/smalot/cups-ipp)
-[![Monthly Downloads](https://poser.pugx.org/smalot/cups-ipp/d/monthly)](https://packagist.org/packages/smalot/cups-ipp)
-[![Daily Downloads](https://poser.pugx.org/smalot/cups-ipp/d/daily)](https://packagist.org/packages/smalot/cups-ipp)
+[![Total Downloads](https://poser.pugx.org/smalot/cups-ipp/downloads.png)](https://packagist.org/packages/oscarsalomon89/cups-ipp)
+[![Monthly Downloads](https://poser.pugx.org/smalot/cups-ipp/d/monthly)](https://packagist.org/packages/oscarsalomon89/cups-ipp)
+[![Daily Downloads](https://poser.pugx.org/smalot/cups-ipp/d/daily)](https://packagist.org/packages/oscarsalomon89/cups-ipp)
 
 
 ## Install via Composer
@@ -18,7 +18,7 @@ CUPS (Common Unix Printing System) is a modular printing system for Unix-like co
 You can install the component using [Composer](https://getcomposer.org/).
 
 ````sh
-composer require smalot/cups-ipp
+composer require oscarsalomon89/cups-ipp
 ````
 
 Then, require the `vendor/autoload.php` file to enable the autoloading mechanism provided by Composer.

@@ -1,11 +1,11 @@
 <?php
 
-namespace Oscarsalomon89\Cups\Model\Traits;
+namespace oscarsalomon89\Cups\Model\Traits;
 
 /**
  * Trait UriAware
  *
- * @package Oscarsalomon89\Cups\Model\Traits
+ * @package oscarsalomon89\Cups\Model\Traits
  */
 trait UriAware
 {

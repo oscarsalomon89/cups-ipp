@@ -1,16 +1,16 @@
 <?php
 
-namespace Oscarsalomon89\Cups\Manager;
+namespace oscarsalomon89\Cups\Manager;
 
-use Oscarsalomon89\Cups\Model\Printer;
-use Oscarsalomon89\Cups\Model\PrinterInterface;
-use Oscarsalomon89\Cups\Transport\Response as CupsResponse;
+use oscarsalomon89\Cups\Model\Printer;
+use oscarsalomon89\Cups\Model\PrinterInterface;
+use oscarsalomon89\Cups\Transport\Response as CupsResponse;
 use GuzzleHttp\Psr7\Request;
 
 /**
  * Class Printer
  *
- * @package Oscarsalomon89\Cups\Manager
+ * @package oscarsalomon89\Cups\Manager
  */
 class PrinterManager extends ManagerAbstract
 {
@@ -18,7 +18,7 @@ class PrinterManager extends ManagerAbstract
     /**
      * @param string $uri
      *
-     * @return \Oscarsalomon89\Cups\Model\Printer|false
+     * @return \oscarsalomon89\Cups\Model\Printer|false
      */
     public function findByUri($uri)
     {
@@ -35,9 +35,9 @@ class PrinterManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\PrinterInterface $printer
+     * @param \oscarsalomon89\Cups\Model\PrinterInterface $printer
      *
-     * @return \Oscarsalomon89\Cups\Model\PrinterInterface
+     * @return \oscarsalomon89\Cups\Model\PrinterInterface
      */
     public function reloadAttributes(PrinterInterface $printer)
     {
@@ -54,7 +54,7 @@ class PrinterManager extends ManagerAbstract
     }
 
     /**
-     * @return \Oscarsalomon89\Cups\Model\Printer|null
+     * @return \oscarsalomon89\Cups\Model\Printer|null
      */
     public function getDefault()
     {
@@ -76,7 +76,7 @@ class PrinterManager extends ManagerAbstract
     /**
      * @param array $attributes
      *
-     * @return \Oscarsalomon89\Cups\Model\Printer[]
+     * @return \oscarsalomon89\Cups\Model\Printer[]
      */
     public function getList($attributes = [])
     {
@@ -99,7 +99,7 @@ class PrinterManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\PrinterInterface $printer
+     * @param \oscarsalomon89\Cups\Model\PrinterInterface $printer
      *
      * @return bool
      */
@@ -116,7 +116,7 @@ class PrinterManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\PrinterInterface $printer
+     * @param \oscarsalomon89\Cups\Model\PrinterInterface $printer
      *
      * @return bool
      */
@@ -133,7 +133,7 @@ class PrinterManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\PrinterInterface $printer
+     * @param \oscarsalomon89\Cups\Model\PrinterInterface $printer
      *
      * @return bool
      */
@@ -174,7 +174,7 @@ class PrinterManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\PrinterInterface $printer
+     * @param \oscarsalomon89\Cups\Model\PrinterInterface $printer
      *
      * @return \GuzzleHttp\Psr7\Request
      */
@@ -233,7 +233,7 @@ class PrinterManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\PrinterInterface $printer
+     * @param \oscarsalomon89\Cups\Model\PrinterInterface $printer
      *
      * @return \GuzzleHttp\Psr7\Request
      */
@@ -262,7 +262,7 @@ class PrinterManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\PrinterInterface $printer
+     * @param \oscarsalomon89\Cups\Model\PrinterInterface $printer
      *
      * @return \GuzzleHttp\Psr7\Request
      */
@@ -291,7 +291,7 @@ class PrinterManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\PrinterInterface $printer
+     * @param \oscarsalomon89\Cups\Model\PrinterInterface $printer
      *
      * @return \GuzzleHttp\Psr7\Request
      */
@@ -363,10 +363,10 @@ class PrinterManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\PrinterInterface $printer
+     * @param \oscarsalomon89\Cups\Model\PrinterInterface $printer
      * @param $item
      *
-     * @return \Oscarsalomon89\Cups\Model\PrinterInterface
+     * @return \oscarsalomon89\Cups\Model\PrinterInterface
      */
     protected function fillAttributes(PrinterInterface $printer, $item)
     {

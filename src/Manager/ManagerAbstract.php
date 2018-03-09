@@ -1,16 +1,16 @@
 <?php
 
-namespace Oscarsalomon89\Cups\Manager;
+namespace oscarsalomon89\Cups\Manager;
 
 use Http\Client\HttpClient;
 use Psr\Http\Message\ResponseInterface;
-use Oscarsalomon89\Cups\Builder\Builder;
-use Oscarsalomon89\Cups\Transport\ResponseParser;
+use oscarsalomon89\Cups\Builder\Builder;
+use oscarsalomon89\Cups\Transport\ResponseParser;
 
 /**
  * Class ManagerAbstract
  *
- * @package Oscarsalomon89\Cups\Manager
+ * @package oscarsalomon89\Cups\Manager
  */
 class ManagerAbstract
 {
@@ -26,12 +26,12 @@ class ManagerAbstract
     protected $client;
 
     /**
-     * @var \Oscarsalomon89\Cups\Builder\Builder
+     * @var \oscarsalomon89\Cups\Builder\Builder
      */
     protected $builder;
 
     /**
-     * @var \Oscarsalomon89\Cups\Transport\ResponseParser
+     * @var \oscarsalomon89\Cups\Transport\ResponseParser
      */
     protected $responseParser;
 
@@ -43,9 +43,9 @@ class ManagerAbstract
     /**
      * ManagerAbstract constructor.
      *
-     * @param \Oscarsalomon89\Cups\Builder\Builder $builder
+     * @param \oscarsalomon89\Cups\Builder\Builder $builder
      * @param \Http\Client\HttpClient $client
-     * @param \Oscarsalomon89\Cups\Transport\ResponseParser $responseParser
+     * @param \oscarsalomon89\Cups\Transport\ResponseParser $responseParser
      */
     public function __construct(Builder $builder, HttpClient $client, ResponseParser $responseParser)
     {
@@ -85,7 +85,7 @@ class ManagerAbstract
     /**
      * @param \Psr\Http\Message\ResponseInterface $response
      *
-     * @return \Oscarsalomon89\Cups\Transport\Response
+     * @return \oscarsalomon89\Cups\Transport\Response
      */
     public function parseResponse(ResponseInterface $response)
     {

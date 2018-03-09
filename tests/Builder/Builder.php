@@ -1,23 +1,23 @@
 <?php
 
-namespace Oscarsalomon89\Cups\Tests\Units\Builder;
+namespace oscarsalomon89\Cups\Tests\Units\Builder;
 
 use mageekguy\atoum;
-use Oscarsalomon89\Cups\Model\Job;
-use Oscarsalomon89\Cups\Model\Printer;
-use Oscarsalomon89\Cups\Transport\Client;
+use oscarsalomon89\Cups\Model\Job;
+use oscarsalomon89\Cups\Model\Printer;
+use oscarsalomon89\Cups\Transport\Client;
 
 /**
  * Class Builder
  *
- * @package Oscarsalomon89\Cups\Tests\Units\Builder
+ * @package oscarsalomon89\Cups\Tests\Units\Builder
  */
 class Builder extends atoum\test
 {
 
     public function testFormatStringLength()
     {
-        $builder = new \Oscarsalomon89\Cups\Builder\Builder();
+        $builder = new \oscarsalomon89\Cups\Builder\Builder();
 
         $length = $builder->formatStringLength('bonjour');
         $this->string($length)->isEqualTo(chr(0).chr(7));
@@ -33,14 +33,14 @@ class Builder extends atoum\test
               $builder->formatStringLength(str_repeat('X', 65535 + 1));
           }
         )
-          ->isInstanceOf('\Oscarsalomon89\Cups\CupsException')
+          ->isInstanceOf('\oscarsalomon89\Cups\CupsException')
           ->hasMessage('Max string length for an ipp meta-information = 65535, while here 65536.')
           ->hasCode(0);
     }
 
     public function testFormatInteger()
     {
-        $builder = new \Oscarsalomon89\Cups\Builder\Builder();
+        $builder = new \oscarsalomon89\Cups\Builder\Builder();
 
         $length = $builder->formatInteger(0);
         $this->string($length)->isEqualTo(chr(0).chr(0).chr(0).chr(0));
@@ -62,7 +62,7 @@ class Builder extends atoum\test
               $builder->formatInteger(2147483647);
           }
         )
-          ->isInstanceOf('\Oscarsalomon89\Cups\CupsException')
+          ->isInstanceOf('\oscarsalomon89\Cups\CupsException')
           ->hasMessage('Values must be between -2147483648 and 2147483647.')
           ->hasCode(0);
         $this->exception(
@@ -70,14 +70,14 @@ class Builder extends atoum\test
               $builder->formatInteger(-2147483649);
           }
         )
-          ->isInstanceOf('\Oscarsalomon89\Cups\CupsException')
+          ->isInstanceOf('\oscarsalomon89\Cups\CupsException')
           ->hasMessage('Values must be between -2147483648 and 2147483647.')
           ->hasCode(0);
     }
 
     public function testFormatRangeOfInteger()
     {
-        $builder = new \Oscarsalomon89\Cups\Builder\Builder();
+        $builder = new \oscarsalomon89\Cups\Builder\Builder();
 
         $length = $builder->formatRangeOfInteger('1:5');
         $this->string($length)->isEqualTo(chr(0).chr(0).chr(0).chr(1).chr(0).chr(0).chr(0).chr(5));
@@ -89,7 +89,7 @@ class Builder extends atoum\test
 
     public function testBuildProperties()
     {
-        $builder = new \Oscarsalomon89\Cups\Builder\Builder();
+        $builder = new \oscarsalomon89\Cups\Builder\Builder();
 
         $properties = [
           'fit-to-page' => 1,
@@ -117,7 +117,7 @@ class Builder extends atoum\test
 
     public function testBuildProperty()
     {
-        $builder = new \Oscarsalomon89\Cups\Builder\Builder();
+        $builder = new \oscarsalomon89\Cups\Builder\Builder();
 
         $type = $builder->buildProperty('fit-to-page', 1);
         $this->string($type)->isEqualTo(
@@ -202,7 +202,7 @@ class Builder extends atoum\test
 
     public function testGetTypeFromProperty()
     {
-        $builder = new \Oscarsalomon89\Cups\Builder\Builder();
+        $builder = new \oscarsalomon89\Cups\Builder\Builder();
 
         $type = $builder->getTypeFromProperty('fit-to-page');
         $this->string($type['tag'])->isEqualTo(chr(0x21));

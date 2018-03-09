@@ -1,32 +1,32 @@
 <?php
 
-namespace Oscarsalomon89\Cups\Manager;
+namespace oscarsalomon89\Cups\Manager;
 
 use Http\Client\HttpClient;
-use Oscarsalomon89\Cups\Builder\Builder;
-use Oscarsalomon89\Cups\CupsException;
-use Oscarsalomon89\Cups\Model\Job;
-use Oscarsalomon89\Cups\Model\JobInterface;
-use Oscarsalomon89\Cups\Model\PrinterInterface;
-use Oscarsalomon89\Cups\Transport\Response as CupsResponse;
+use oscarsalomon89\Cups\Builder\Builder;
+use oscarsalomon89\Cups\CupsException;
+use oscarsalomon89\Cups\Model\Job;
+use oscarsalomon89\Cups\Model\JobInterface;
+use oscarsalomon89\Cups\Model\PrinterInterface;
+use oscarsalomon89\Cups\Transport\Response as CupsResponse;
 use GuzzleHttp\Psr7\Request;
 
 /**
  * Class Job
  *
- * @package Oscarsalomon89\Cups\Manager
+ * @package oscarsalomon89\Cups\Manager
  */
 class JobManager extends ManagerAbstract
 {
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\PrinterInterface $printer
+     * @param \oscarsalomon89\Cups\Model\PrinterInterface $printer
      * @param bool $myJobs
      * @param int $limit
      * @param string $whichJobs
      * @param bool $subset
      *
-     * @return \Oscarsalomon89\Cups\Model\JobInterface[]
+     * @return \oscarsalomon89\Cups\Model\JobInterface[]
      */
     public function getList(
       PrinterInterface $printer,
@@ -55,11 +55,11 @@ class JobManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\JobInterface $job
+     * @param \oscarsalomon89\Cups\Model\JobInterface $job
      * @param bool $subset
      * @param string $attributesGroup
      *
-     * @return \Oscarsalomon89\Cups\Model\JobInterface
+     * @return \oscarsalomon89\Cups\Model\JobInterface
      */
     public function reloadAttributes(JobInterface $job, $subset = false, $attributesGroup = 'all')
     {
@@ -78,7 +78,7 @@ class JobManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\PrinterInterface $printer
+     * @param \oscarsalomon89\Cups\Model\PrinterInterface $printer
      * @param JobInterface $job
      * @param int $timeout
      *
@@ -120,7 +120,7 @@ class JobManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\JobInterface $job
+     * @param \oscarsalomon89\Cups\Model\JobInterface $job
      * @param array $update
      * @param array $delete
      *
@@ -216,7 +216,7 @@ class JobManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\PrinterInterface $printer
+     * @param \oscarsalomon89\Cups\Model\PrinterInterface $printer
      * @param bool $myJobs
      * @param int $limit
      * @param string $whichJobs
@@ -280,7 +280,7 @@ class JobManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\JobInterface $job
+     * @param \oscarsalomon89\Cups\Model\JobInterface $job
      * @param bool $subset
      * @param string $attributesGroup
      *
@@ -336,7 +336,7 @@ class JobManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\JobInterface $job
+     * @param \oscarsalomon89\Cups\Model\JobInterface $job
      * @param array $update
      * @param array $delete
      *
@@ -379,7 +379,7 @@ class JobManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\PrinterInterface $printer
+     * @param \oscarsalomon89\Cups\Model\PrinterInterface $printer
      * @param JobInterface $job
      * @param int $timeout
      *
@@ -428,7 +428,7 @@ class JobManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\JobInterface $job
+     * @param \oscarsalomon89\Cups\Model\JobInterface $job
      *
      * @return \GuzzleHttp\Psr7\Request
      */
@@ -462,7 +462,7 @@ class JobManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\JobInterface $job
+     * @param \oscarsalomon89\Cups\Model\JobInterface $job
      *
      * @return \GuzzleHttp\Psr7\Request
      */
@@ -494,7 +494,7 @@ class JobManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\JobInterface $job
+     * @param \oscarsalomon89\Cups\Model\JobInterface $job
      * @param string $until
      *
      * @return \GuzzleHttp\Psr7\Request
@@ -548,7 +548,7 @@ class JobManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\JobInterface $job
+     * @param \oscarsalomon89\Cups\Model\JobInterface $job
      *
      * @return \GuzzleHttp\Psr7\Request
      */
@@ -580,7 +580,7 @@ class JobManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\JobInterface $job
+     * @param \oscarsalomon89\Cups\Model\JobInterface $job
      * @param array $part
      * @param bool $isLast
      *
@@ -633,10 +633,10 @@ class JobManager extends ManagerAbstract
     }
 
     /**
-     * @param \Oscarsalomon89\Cups\Model\JobInterface $job
+     * @param \oscarsalomon89\Cups\Model\JobInterface $job
      * @param $item
      *
-     * @return \Oscarsalomon89\Cups\Model\JobInterface
+     * @return \oscarsalomon89\Cups\Model\JobInterface
      */
     protected function fillAttributes(JobInterface $job, $item)
     {

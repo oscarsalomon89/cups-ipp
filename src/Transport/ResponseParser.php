@@ -1,13 +1,13 @@
 <?php
 
-namespace Oscarsalomon89\Cups\Transport;
+namespace oscarsalomon89\Cups\Transport;
 
 use Psr\Http\Message\ResponseInterface;
 
 /**
  * Class ResponseParser
  *
- * @package Oscarsalomon89\Cups\Transport
+ * @package oscarsalomon89\Cups\Transport
  */
 class ResponseParser
 {
@@ -70,7 +70,7 @@ class ResponseParser
     /**
      * @param \Psr\Http\Message\ResponseInterface $response
      *
-     * @return \Oscarsalomon89\Cups\Transport\Response
+     * @return \oscarsalomon89\Cups\Transport\Response
      */
     public function parse(ResponseInterface $response)
     {
@@ -109,7 +109,7 @@ class ResponseParser
      * @param int $requestId
      * @param array $body
      *
-     * @return \Oscarsalomon89\Cups\Transport\Response
+     * @return \oscarsalomon89\Cups\Transport\Response
      */
     protected function generateResponse($ippVersion, $statusCode, $requestId, $body)
     {

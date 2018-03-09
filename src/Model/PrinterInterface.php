@@ -1,11 +1,11 @@
 <?php
 
-namespace Oscarsalomon89\Cups\Model;
+namespace oscarsalomon89\Cups\Model;
 
 /**
  * Interface PrinterInterface
  *
- * @package Oscarsalomon89\Cups\Model
+ * @package oscarsalomon89\Cups\Model
  */
 interface PrinterInterface
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Oscarsalomon89\Cups\Manager\Traits;
+namespace oscarsalomon89\Cups\Manager\Traits;
 
 /**
  * Trait CharsetAware
  *
- * @package Oscarsalomon89\Cups\Manager\Traits
+ * @package oscarsalomon89\Cups\Manager\Traits
  */
 trait CharsetAware
 {

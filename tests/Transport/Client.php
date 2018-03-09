@@ -1,14 +1,14 @@
 <?php
 
-namespace Oscarsalomon89\Cups\Tests\Units\Transport;
+namespace oscarsalomon89\Cups\Tests\Units\Transport;
 
 use Psr\Http\Message\RequestInterface;
-use Oscarsalomon89\Cups\Transport\Client as BaseClient;
+use oscarsalomon89\Cups\Transport\Client as BaseClient;
 
 /**
  * Class Client
  *
- * @package Oscarsalomon89\Cups\Tests\Units\Transport
+ * @package oscarsalomon89\Cups\Tests\Units\Transport
  */
 class Client extends BaseClient
 {

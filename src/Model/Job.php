@@ -1,11 +1,11 @@
 <?php
 
-namespace Oscarsalomon89\Cups\Model;
+namespace oscarsalomon89\Cups\Model;
 
 /**
  * Class Job
  *
- * @package Oscarsalomon89\Cups\Model
+ * @package oscarsalomon89\Cups\Model
  */
 class Job implements JobInterface
 {

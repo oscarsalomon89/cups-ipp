@@ -1,14 +1,14 @@
 <?php
 
-namespace Oscarsalomon89\Cups\Builder;
+namespace oscarsalomon89\Cups\Builder;
 
-use Oscarsalomon89\Cups\CupsException;
+use oscarsalomon89\Cups\CupsException;
 use Symfony\Component\Yaml\Parser;
 
 /**
  * Class Builder
  *
- * @package Oscarsalomon89\Cups\Builder
+ * @package oscarsalomon89\Cups\Builder
  */
 class Builder
 {
@@ -71,7 +71,7 @@ class Builder
      * @param string $string
      *
      * @return string
-     * @throws \Oscarsalomon89\Cups\CupsException
+     * @throws \oscarsalomon89\Cups\CupsException
      */
     public function formatStringLength($string)
     {
@@ -99,7 +99,7 @@ class Builder
      * @param string $value
      *
      * @return string
-     * @throws \Oscarsalomon89\Cups\CupsException
+     * @throws \oscarsalomon89\Cups\CupsException
      */
     public function formatInteger($value)
     {
@@ -168,7 +168,7 @@ class Builder
      * @param bool $emptyIfMissing
      *
      * @return string
-     * @throws \Oscarsalomon89\Cups\CupsException
+     * @throws \oscarsalomon89\Cups\CupsException
      */
     public function buildProperty($name, $values, $emptyIfMissing = false)
     {
@@ -256,7 +256,7 @@ class Builder
      * @param string $name
      *
      * @return array
-     * @throws \Oscarsalomon89\Cups\CupsException
+     * @throws \oscarsalomon89\Cups\CupsException
      */
     public function getTypeFromProperty($name)
     {

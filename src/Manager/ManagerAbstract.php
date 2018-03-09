@@ -1,16 +1,16 @@
 <?php
 
-namespace Smalot\Cups\Manager;
+namespace Oscarsalomon89\Cups\Manager;
 
 use Http\Client\HttpClient;
 use Psr\Http\Message\ResponseInterface;
-use Smalot\Cups\Builder\Builder;
-use Smalot\Cups\Transport\ResponseParser;
+use Oscarsalomon89\Cups\Builder\Builder;
+use Oscarsalomon89\Cups\Transport\ResponseParser;
 
 /**
  * Class ManagerAbstract
  *
- * @package Smalot\Cups\Manager
+ * @package Oscarsalomon89\Cups\Manager
  */
 class ManagerAbstract
 {
@@ -26,12 +26,12 @@ class ManagerAbstract
     protected $client;
 
     /**
-     * @var \Smalot\Cups\Builder\Builder
+     * @var \Oscarsalomon89\Cups\Builder\Builder
      */
     protected $builder;
 
     /**
-     * @var \Smalot\Cups\Transport\ResponseParser
+     * @var \Oscarsalomon89\Cups\Transport\ResponseParser
      */
     protected $responseParser;
 
@@ -43,9 +43,9 @@ class ManagerAbstract
     /**
      * ManagerAbstract constructor.
      *
-     * @param \Smalot\Cups\Builder\Builder $builder
+     * @param \Oscarsalomon89\Cups\Builder\Builder $builder
      * @param \Http\Client\HttpClient $client
-     * @param \Smalot\Cups\Transport\ResponseParser $responseParser
+     * @param \Oscarsalomon89\Cups\Transport\ResponseParser $responseParser
      */
     public function __construct(Builder $builder, HttpClient $client, ResponseParser $responseParser)
     {
@@ -85,7 +85,7 @@ class ManagerAbstract
     /**
      * @param \Psr\Http\Message\ResponseInterface $response
      *
-     * @return \Smalot\Cups\Transport\Response
+     * @return \Oscarsalomon89\Cups\Transport\Response
      */
     public function parseResponse(ResponseInterface $response)
     {

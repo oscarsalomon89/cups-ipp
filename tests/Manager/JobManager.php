@@ -1,18 +1,18 @@
 <?php
 
-namespace Smalot\Cups\Tests\Units\Manager;
+namespace Oscarsalomon89\Cups\Tests\Units\Manager;
 
 use mageekguy\atoum;
-use Smalot\Cups\Builder\Builder;
-use Smalot\Cups\Model\Job;
-use Smalot\Cups\Model\Printer;
-use Smalot\Cups\Transport\Client;
-use Smalot\Cups\Transport\ResponseParser;
+use Oscarsalomon89\Cups\Builder\Builder;
+use Oscarsalomon89\Cups\Model\Job;
+use Oscarsalomon89\Cups\Model\Printer;
+use Oscarsalomon89\Cups\Transport\Client;
+use Oscarsalomon89\Cups\Transport\ResponseParser;
 
 /**
  * Class JobManager
  *
- * @package Smalot\Cups\Tests\Units\Manager
+ * @package Oscarsalomon89\Cups\Tests\Units\Manager
  */
 class JobManager extends atoum\test
 {
@@ -23,7 +23,7 @@ class JobManager extends atoum\test
         $client = new Client();
         $responseParser = new ResponseParser();
 
-        $jobManager = new \Smalot\Cups\Manager\JobManager($builder, $client, $responseParser);
+        $jobManager = new \Oscarsalomon89\Cups\Manager\JobManager($builder, $client, $responseParser);
         $jobManager->setCharset('utf-8');
         $jobManager->setLanguage('fr-fr');
         $jobManager->setOperationId(5);
@@ -49,7 +49,7 @@ class JobManager extends atoum\test
         $printer = new Printer();
         $printer->setUri($printerUri);
 
-        $jobManager = new \Smalot\Cups\Manager\JobManager($builder, $client, $responseParser);
+        $jobManager = new \Oscarsalomon89\Cups\Manager\JobManager($builder, $client, $responseParser);
         //        $jobs = $jobManager->getList($printer, false, 0, 'completed');
         //        $this->array($jobs)->isEmpty();
     }
@@ -69,7 +69,7 @@ class JobManager extends atoum\test
         $printer = new Printer();
         $printer->setUri($printerUri);
 
-        $jobManager = new \Smalot\Cups\Manager\JobManager($builder, $client, $responseParser);
+        $jobManager = new \Oscarsalomon89\Cups\Manager\JobManager($builder, $client, $responseParser);
         //        $jobs = $jobManager->getList($printer, false);
         //        $this->array($jobs)->isEmpty();
 
@@ -112,7 +112,7 @@ class JobManager extends atoum\test
         $printer = new Printer();
         $printer->setUri($printerUri);
 
-        $jobManager = new \Smalot\Cups\Manager\JobManager($builder, $client, $responseParser);
+        $jobManager = new \Oscarsalomon89\Cups\Manager\JobManager($builder, $client, $responseParser);
         $jobManager->setUsername($user);
         //        $jobs = $jobManager->getList($printer, false);
         //        $this->array($jobs)->isEmpty();
@@ -152,7 +152,7 @@ class JobManager extends atoum\test
         $printer = new Printer();
         $printer->setUri($printerUri);
 
-        $jobManager = new \Smalot\Cups\Manager\JobManager($builder, $client, $responseParser);
+        $jobManager = new \Oscarsalomon89\Cups\Manager\JobManager($builder, $client, $responseParser);
         //        $jobs = $jobManager->getList($printer, false, 0, 'completed');
         //        $this->array($jobs)->isNotEmpty();
     }

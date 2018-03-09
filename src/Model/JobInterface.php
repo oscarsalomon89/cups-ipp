@@ -1,11 +1,11 @@
 <?php
 
-namespace Smalot\Cups\Model;
+namespace Oscarsalomon89\Cups\Model;
 
 /**
  * Interface JobInterface
  *
- * @package Smalot\Cups\Model
+ * @package Oscarsalomon89\Cups\Model
  */
 interface JobInterface
 {

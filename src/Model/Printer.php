@@ -1,11 +1,11 @@
 <?php
 
-namespace Smalot\Cups\Model;
+namespace Oscarsalomon89\Cups\Model;
 
 /**
  * Class Printer
  *
- * @package Smalot\Cups\Model
+ * @package Oscarsalomon89\Cups\Model
  */
 class Printer implements PrinterInterface
 {

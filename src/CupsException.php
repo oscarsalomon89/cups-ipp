@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Smalot\Cups;
+namespace Oscarsalomon89\Cups;
 
 /**
  * Class CupsException
  *
- * @package Smalot\Cups
+ * @package Oscarsalomon89\Cups
  */
 class CupsException extends \Exception
 {

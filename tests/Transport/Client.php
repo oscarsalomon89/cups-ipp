@@ -1,14 +1,14 @@
 <?php
 
-namespace Smalot\Cups\Tests\Units\Transport;
+namespace Oscarsalomon89\Cups\Tests\Units\Transport;
 
 use Psr\Http\Message\RequestInterface;
-use Smalot\Cups\Transport\Client as BaseClient;
+use Oscarsalomon89\Cups\Transport\Client as BaseClient;
 
 /**
  * Class Client
  *
- * @package Smalot\Cups\Tests\Units\Transport
+ * @package Oscarsalomon89\Cups\Tests\Units\Transport
  */
 class Client extends BaseClient
 {

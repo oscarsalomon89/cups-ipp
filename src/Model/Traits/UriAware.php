@@ -1,11 +1,11 @@
 <?php
 
-namespace Smalot\Cups\Model\Traits;
+namespace Oscarsalomon89\Cups\Model\Traits;
 
 /**
  * Trait UriAware
  *
- * @package Smalot\Cups\Model\Traits
+ * @package Oscarsalomon89\Cups\Model\Traits
  */
 trait UriAware
 {

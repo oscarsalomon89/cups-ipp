@@ -1,6 +1,6 @@
 <?php
 
-namespace Smalot\Cups\Transport;
+namespace Oscarsalomon89\Cups\Transport;
 
 use GuzzleHttp\Psr7\Uri;
 use Http\Client\Common\Plugin\AddHostPlugin;
@@ -12,12 +12,12 @@ use Http\Client\HttpClient;
 use Http\Client\Socket\Client as SocketHttpClient;
 use Http\Message\MessageFactory\GuzzleMessageFactory;
 use Psr\Http\Message\RequestInterface;
-use Smalot\Cups\CupsException;
+use Oscarsalomon89\Cups\CupsException;
 
 /**
  * Class Client
  *
- * @package Smalot\Cups\Transport
+ * @package Oscarsalomon89\Cups\Transport
  */
 class Client implements HttpClient
 {

@@ -1,20 +1,20 @@
 <?php
 
-namespace Smalot\Cups\Tests\Units\Model;
+namespace Oscarsalomon89\Cups\Tests\Units\Model;
 
 use mageekguy\atoum;
 
 /**
  * Class Job
  *
- * @package Smalot\Cups\Tests\Units\Model
+ * @package Oscarsalomon89\Cups\Tests\Units\Model
  */
 class Job extends atoum\test
 {
 
     public function testJob()
     {
-        $job = new \Smalot\Cups\Model\Job();
+        $job = new \Oscarsalomon89\Cups\Model\Job();
         $job->setId(1);
         $job->setName('Job #1');
         $job->setUri('ipp://localhost:631/printers/PDF/1');

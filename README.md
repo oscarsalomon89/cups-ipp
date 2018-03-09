@@ -42,10 +42,10 @@ First of all, check if you have correct access to this file: `/var/run/cups/cups
 
 include 'vendor/autoload.php';
 
-use Smalot\Cups\Builder\Builder;
-use Smalot\Cups\Manager\PrinterManager;
-use Smalot\Cups\Transport\Client;
-use Smalot\Cups\Transport\ResponseParser;
+use Oscarsalomon89\Cups\Builder\Builder;
+use Oscarsalomon89\Cups\Manager\PrinterManager;
+use Oscarsalomon89\Cups\Transport\Client;
+use Oscarsalomon89\Cups\Transport\ResponseParser;
 
 $client = new Client();
 $builder = new Builder();
@@ -68,11 +68,11 @@ foreach ($printers as $printer) {
 
 include 'vendor/autoload.php';
 
-use Smalot\Cups\Builder\Builder;
-use Smalot\Cups\Manager\JobManager;
-use Smalot\Cups\Manager\PrinterManager;
-use Smalot\Cups\Transport\Client;
-use Smalot\Cups\Transport\ResponseParser;
+use Oscarsalomon89\Cups\Builder\Builder;
+use Oscarsalomon89\Cups\Manager\JobManager;
+use Oscarsalomon89\Cups\Manager\PrinterManager;
+use Oscarsalomon89\Cups\Transport\Client;
+use Oscarsalomon89\Cups\Transport\ResponseParser;
 
 $client = new Client();
 $builder = new Builder();
@@ -98,12 +98,12 @@ foreach ($jobs as $job) {
 
 include 'vendor/autoload.php';
 
-use Smalot\Cups\Builder\Builder;
-use Smalot\Cups\Manager\JobManager;
-use Smalot\Cups\Manager\PrinterManager;
-use Smalot\Cups\Model\Job;
-use Smalot\Cups\Transport\Client;
-use Smalot\Cups\Transport\ResponseParser;
+use Oscarsalomon89\Cups\Builder\Builder;
+use Oscarsalomon89\Cups\Manager\JobManager;
+use Oscarsalomon89\Cups\Manager\PrinterManager;
+use Oscarsalomon89\Cups\Model\Job;
+use Oscarsalomon89\Cups\Transport\Client;
+use Oscarsalomon89\Cups\Transport\ResponseParser;
 
 $client = new Client();
 $builder = new Builder();

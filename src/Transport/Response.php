@@ -1,13 +1,13 @@
 <?php
 
-namespace Smalot\Cups\Transport;
+namespace Oscarsalomon89\Cups\Transport;
 
 use Psr\Http\Message\ResponseInterface;
 
 /**
  * Class Response
  *
- * @package Smalot\Cups\Transport
+ * @package Oscarsalomon89\Cups\Transport
  */
 class Response
 {
